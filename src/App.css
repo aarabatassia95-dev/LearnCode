@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f7f9fc; /* gris très clair */
+  color: #1a1a1a; /* texte gris foncé */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.home {
+  width: 100%;
   min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px 40px;
+  background: white; 
+  border-bottom: 1px solid #dcdde1; /* gris clair */
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.logo span {
+  color: #3b82f6; /* bleu clair */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  font-size: 16px;
+  cursor: pointer;
+  color: #4b5563; /* gris */
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #3b82f6; /* bleu clair */
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #1f2937; /* gris foncé */
+}
+
+.hero h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #4b5563; /* gris */
+}
+
+.hero p {
+  font-size: 18px;
+  color: #6b7280; /* gris médium */
+  margin-bottom: 40px;
+}
+
+/* BUTTON */
+.btn-start {
+  background: #3b82f6; /* bleu clair */
   color: white;
+  padding: 14px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-start:hover {
+  background: #60a5fa; /* bleu plus clair */
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* LINK STYLE LIKE W3SCHOOLS */
+.hero-link {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 20px;
+  color: #3b82f6; /* bleu clair */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
+
+.hero-link:hover {
+  color: #60a5fa; /* hover bleu */
+}
+button {
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #0f172a;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+ 
+
+}
+
+button:hover {
+
+  background: #5b90d5;
+  /* transform: translateY(-2px); */
+  box-shadow: 0 6px 14px rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+
+
